@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*기본css*/
+
+body{
+    font-family:'NotoSans','NotoSerif',sans-serif;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,p,dd,dt{
+    margin:0;
+    
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.inner{
+    width:1200px;
+    margin:0 auto;
+}
+
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#wrap{
+    width: 100%;
+}
+/****전체시작******/
+
+#header{
+    
+}
+
+.headerTop{}
+
+.engBtn{}
+.engBtn a{}
+
+.utill{}
+.utill li{}
+.utill li a{}
+.utill li a img{}
+
+
+
+#header h1{}
+#header h1 a{}
+
+
+
+.gnb{}
+.gnb li{}
+.gnb li a{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

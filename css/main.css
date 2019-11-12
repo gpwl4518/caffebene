@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+
+
+#container{}
+
+.mainSlider{
+    height: 650px;
+    position: relative;/*★메인 중앙에오게하는조건*/
+    overflow: hidden; /*★메인 중앙에오게하는조건*/
+}
+.mainSlider img{
+    position: absolute;/*★메인 중앙에오게하는조건*/
+    left:50%;/*★메인 중앙에오게하는조건*/
+    margin-left:-960px;/*★메인 중앙에오게하는조건 */
+}
+
+
+.sliderBtn{
+    position: absolute;
+    left:50%;
+    margin-left: -12px;
+    bottom:20px;
+}
+.sliderBtn a{
+    width:12px;
+    height: 12px;
+    display: inline-block;
+    text-indent: -9999px;
+    background: url(../images/main/navi_main_slide.png) no-repeat;
+    margin:0 3px;
+}
+
+
+.sliderBtn .on:hover{
+    background-position: 0 -12px;
+}
+
+
+
+
+
+/*mainCon1*/
+
+/*메인컨1을 디스플레이 인라인블락으로 올리고 중간정렬 텍스트얼라인이 아닌
+플루트 레프트로 올리고 중간정렬시키려면 저거를 감싸주는 div를 하나 만들어서
+중간정렬 할 애들의 가로값을 직접 다 계산해서 그 새로감싼 div에 가로값계산한거 그대로
+가로값을주고 마진영 오토하면 자동으로 중간정렬이 됨...메인컨1에서는  디스플레이 인라인블락이 더 편리함. 텍스트얼라인센터주고 아닌애들은 텍스트 레프트하면되니까
+*/
+
+/*★플루트레프트와 디스플레이 블락의 중간정렬방법★
+- 플루트 레프트 = 중간정렬할것들 감싸주고 가로값주고 마진영오토(부모값에 cf주는건 필수) 
+- 디스플레이 인라인블락 = 텍스트 얼라인(엔터공백값 뺴려면 폰트사이즈 0)*/
+.mainCon1{
+    background: #f5f5f5;
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.con1Box{
+    color: #333;
+    display: inline-block;
+    text-align: left;
+    padding: 0 80px;
+    vertical-align: top; /*위에 딱 붙게 맞추는거!!!!!!!!!!!!*/
+}
+
+
+
+.con1_1{
+    background: url(../images/main/bg_bar_div.gif) no-repeat right 0;/*x,y값.. */
+}
+.con1_1 h3{
+    color:#711b04;
+    font-family:'NotoSerifKR';
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+.con1_1 p{}
+
+
+.con1_2{
+    font-size: 14px;
+    line-height: 25px;
+}
+.con1_2 .moreBtn{
+    margin-top: 20px;
+}
+.con1_2 .moreBtn a{}
+.con1_2 .moreBtn a img{
+    width: 30px;
+}
+
+
+/*mainCo2*/
+
+.mainCon2{
+    background: url(../images/main/visual01.jpg) no-repeat;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.mainCon2 h2{
+    font-weight: 500;
+}
+.mainCon2 h2:after{/*줄주는거*/
+    content: "";
+    display: block;
+    width: 180px;
+    margin:10px auto;/*가로값 세로값있으면 중간정렬할떄 이게 딱임*/
+    height: 1px;
+    background: #e6e2dd;
+}
+
+.mainCon2 p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.mainCon2 .con2SubT{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.mainCon2 .moreBtn{
+    margin-top: 100px;
+}
+.mainCon2 .moreBtn a{}
+.mainCon2 .moreBtn img{
+    width:40px;
+}
+
+
+
+/*mainCon3*/
+.mainCon3{
+    text-align: center;
+    padding: 80px 0;
+}
+
+.mainCon3 h2{
+    font-family: 'NotoserifKR';
+    color:#711b04;
+}
+.mainCon3 p{
+    color: #464646;
+    margin-top:15px;
+    margin-bottom:  25px
+    
+}
+
+.con3Menu{
+}
+.con3Box{
+    float:left;
+    background: #f6f6f6;
+    position: relative;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    
+}
+.bigBox{
+    margin-left: 0;
+}
+
+
+.con3Box a{}
+.con3Box img{
+    display: block;/*이미지는 죄다 인라인블락요소라서 블락요소로 바꿔준거임 공백을..이거안해주면 엔터값때문에 공백값 생기기떄문...*/
+}
+
+.menuInfo{
+    width: 100%;
+    position: absolute;
+    bottom:20px;
+}
+.menuInfo h3{
+    font-size: 18px;
+    font-family: 'NotoserifKR';
+    color:#7d645a;
+}
+.menuInfo p{
+    font-size: 14px;
+    margin:0;/*.mainCon3 p 에서 마진탑이랑 바틈에 값줘서 maincon3에있는 모든 p태그에는 다 값이먹기떄문에 이것만 부모값불러와서 마진 빼준거임*/
+}
+
+
+
+
+/*mainCon4*/
+
+.mainCon4{
+    background: url(../images/main/visual02.jpg) no-repeat;
+}
+
+.findBtn{
+    margin-top:30px;
+    
+}
+
+.findBtn a img{
+    width: 180px;
+}
+
+.mainCon4 h2{
+    font-family: 'NotoSerifKR';
+}
+
+
+/*mainCon5*/
+.mainCon5{
+    background:#bdb3ae;
+    color:#fff;
+    text-align: center;
+    padding: 30px 0;
+}
+.mainCon5 span{
+    vertical-align: middle;
+}
+.mainCon5 .con5Title{
+    font-family: 'NotoSerifKR';
+    font-size: 25px;
+    font-weight: 700;
+}
+.mainCon5 .con5Text{
+    font-size: 14px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.mainCon5 .con5Btn{
+    display: inline-block;
+}
+.mainCon5 .con5Btn img{
+    width: 40px;
+}
+
+
+
+/*mainCon6*/
+
+
+.mainCon6{
+    background: url(../images/main/bg_visual.jpg) no-repeat;
+    padding: 80px 0;
+}
+
+
+.con6Box{
+    text-align: center;
+    height: 120px;
+    width: 300px;
+    float: left;
+    font-family: 'NotoSerifKR';
+}
+.con6Box h4{
+    color:#7d645d;
+}
+.con6Box h4 img{
+    width: 15px;
+}
+.con6Box p{
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+
+
+/*footer*/
+#footer{
+    position: relative;
+    background: #1e1e1e;
+}
+
+.topBtn{
+    width: 102px;
+    height: 39px;
+    background: url(../images/common/btn_go_top.png) no-repeat;
+    font-family:'NotoSerifKR';
+    position: absolute;
+    top:-39px;
+    text-align: center;
+    line-height: 39px;
+    font-size: 12px;
+    font-weight: 700;
+    left: 50%;/*(해상도크기 바뀌어도 중앙정렬하는조건1)50프로 반만큼,,,,그냥외워!*/
+    margin-left: -51px;/*(해상도크기 바뀌어도 중앙정렬하는조건2)전체가로길이 102 의 반만큼 떙겨준거*/
+
+}
+.topBtn a{
+    display: block;
+    color: #646464;
+}
+
+
+.footerMenu{
+    background: #282828;
+    padding: 50px 0;
+}
+
+
+
+.footerMenu dl{
+    font-size: 14px;
+    float: left;
+    margin-right: 80px;
+    
+}
+.footerMenu dl dt{
+    color:#646464;
+    font-family:'NotoSerifKR';
+    font-weight: 700;
+}
+.footerMenu dl dt:after{
+    content: "";
+    display: block;
+    width:30px;
+    height: 1px;
+    background: #8c8c8c;
+    margin: 10px 0;
+}
+
+
+
+.footerMenu dl dd{
+    line-height: 24px;
+}
+.footerMenu dl dd a{
+    color:#8c8c8c;
+}
+
+
+
+.footerInfo{
+    position: relative;
+    color:#646464;
+    padding: 50px 0;
+}
+
+.snsIcon{
+    position: absolute;
+    right: 0;
+}
+.snsIcon li{
+    width: 25px;
+    float: left;
+    margin-left: 5px;
+}
+.snsIcon li a{}
+.snsIcon li a img{
+    width: 100%
+        
+}
+
+.fLogo{}
+.fLogo img{
+    width: 150px;
+}
+
+
+
+.infoList{
+    margin-top: 10px;
+    
+    font-size: 0;
+}
+.infoList a{
+    color:#646464;
+    font-size: 14px;
+}
+.infoList a:after,.infoList span:after{/*동시에 준ㄴ다용*/
+    content:"";
+    display: inline-block;
+    width:1px;
+    height: 8px;
+    background: #646464;
+    margin: 0 5px;
+}
+
+
+
+.infoList span{
+    font-size: 14px;
+}
+
+.infoList a:last-child:after{
+    
+
+    display: none;
+}
+
+.infoList span:last-child:after{
+    display: none;
+}
+
+
+.copy{
+    margin-top: 30px;
+    font-family: 'NotoSerifKR';
+}
+

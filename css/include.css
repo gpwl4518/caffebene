@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+
+/*헤더시작*/
+#header{
+    
+}
+
+.headerTop{
+    background: #272727;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.headerTop a{
+    color: #fff;
+    
+    padding: 0 20px;
+    display: block;
+}
+
+.engBtn{
+    float: left;
+    border-left:1px solid #231f20;
+}
+.engBtn a{
+    
+    padding: 0 20px;
+    display: block;
+}
+
+.utill{
+    float: right;
+}
+.utill li{
+    float: left;
+    border-left:1px solid #231f20;
+    
+}
+.utill li a{}
+.utill li a img{
+    margin-left: 5px;
+}
+
+
+.headerBottom{
+    padding: 30px 0;
+}
+.headerBottom h1{
+    float: left;
+    width:150px;
+    height: 50px;
+    line-height: 50px;
+}
+.headerBottom h1 a{}
+.headerBottom h1 img{
+    width: 100%; /*그림꽉ㅊㅏ게 다나온게해주기..*/
+
+}
+
+
+
+.gnb{
+    float: right;
+    height: 50px;
+    line-height: 50px;
+}
+.gnb li{
+    float: left;
+    font-size: 16px;
+    
+    
+}
+.gnb li a{
+    color:#333;
+    padding: 0 30px;
+    display: block;
+}
+
+
